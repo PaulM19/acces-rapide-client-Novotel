@@ -45,31 +45,23 @@
       animation: glow 2s infinite ease-in-out;
     }
 
-    a.button {
+    .main-button {
       display: inline-block;
       background-color: #003580;
       color: white;
-      padding: 12px 28px;
-      border-radius: 30px;
+      padding: 14px 32px;
+      border-radius: 999px; /* bouton très arrondi */
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
-      transition: background-color 0.3s ease;
-      margin-bottom: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      margin-top: 10px;
     }
 
-    a.button:hover {
+    .main-button:hover {
       background-color: #002b66;
-    }
-
-    a.simple-link {
-      color: #003580;
-      font-size: 15px;
-      text-decoration: underline;
-    }
-
-    a.simple-link:hover {
-      color: #002b66;
+      transform: translateY(-2px);
     }
 
     @keyframes fadeInDown {
@@ -90,18 +82,14 @@
 </head>
 <body>
   <h1>Cher participant au FII SÉNÉGAL 2025 👋</h1>
-  <p>Pour simplifier votre séjour, scannez ce QR code ou utilisez les liens ci-dessous pour accéder à l’offre de réservation exclusive à Dakar du 5 au 8 octobre 2025.</p>
+  <p>Pour simplifier votre séjour, scannez ce QR code ou cliquez sur le bouton ci-dessous pour accéder à l’offre de réservation exclusive à Dakar du 5 au 8 octobre 2025.</p>
 
   <div class="qr-container">
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false" alt="QR Code vers la réservation FII Sénégal 2025">
   </div>
 
-  <a class="button" href="https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false" target="_blank">
-    Réserver mon séjour
-  </a>
-
-  <a class="simple-link" href="https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false" target="_blank">
-    👉 Cliquez ici pour réserver maintenant
+  <a class="main-button" href="https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false" target="_blank">
+    Réserver maintenant
   </a>
 </body>
 </html>
