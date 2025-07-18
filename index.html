@@ -13,19 +13,25 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       color: #003580;
       text-align: center;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 22px;
+      font-size: 24px;
       animation: fadeInDown 1s ease-in-out;
-      padding: 0 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0 30px;
     }
 
     .qr-container {
-      margin: 30px 0;
+      margin-bottom: 30px;
       padding: 20px;
       background: white;
       border-radius: 16px;
@@ -43,10 +49,11 @@
       display: inline-block;
       background-color: #003580;
       color: white;
-      padding: 12px 24px;
+      padding: 12px 28px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 16px;
       transition: background-color 0.3s ease;
     }
 
@@ -55,44 +62,28 @@
     }
 
     @keyframes fadeInDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes popIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
     }
 
     @keyframes glow {
-      0%, 100% {
-        box-shadow: 0 0 15px rgba(0, 53, 128, 0.3);
-      }
-      50% {
-        box-shadow: 0 0 30px rgba(0, 53, 128, 0.6);
-      }
+      0%, 100% { box-shadow: 0 0 15px rgba(0, 53, 128, 0.3); }
+      50% { box-shadow: 0 0 30px rgba(0, 53, 128, 0.6); }
     }
   </style>
 </head>
 <body>
   <h1>Cher participant au FII SÉNÉGAL 2025 👋</h1>
+  <p>Pour simplifier votre séjour, scannez ce QR code ou cliquez sur le bouton ci-dessous pour accéder à l’offre de réservation exclusive à Dakar du 5 au 8 octobre 2025.</p>
+
   <div class="qr-container">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false&snu=false&hideWDR=false&productCode=null&accessibleRooms=false&hideHotelDetails=false&filters=" alt="QR Code vers réservation">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false&snu=false&hideWDR=false&productCode=null&accessibleRooms=false&hideHotelDetails=false&filters=" alt="QR Code vers la réservation FII Sénégal 2025">
   </div>
-  <a class="button" href="https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false&snu=false&hideWDR=false&productCode=null&accessibleRooms=false&hideHotelDetails=false&filters=" target="_blank">
-    Réserver maintenant
-  </a>
-</body>
-</html>
+
+  <a class="button" href="https://all.accor.com/booking/fr/accor/hotels/dakar-senegal?dateIn=2025-10-05&nights=3&compositions=1&stayplus=false&snu=false&hideWDR=false&productCode=null&access
+
